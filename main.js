@@ -10,20 +10,20 @@ const bcc1 = 'reportheg@proton.me';
 const subject = 'Fraudulent Operations of HappyEasyGo Pvt. Ltd.';
 const tweetOptions = {
   option1: {
-    message: '@happyeasygo is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@getmyrefundin\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
-    html: '<span class="tweet-highlight">@happyeasygo</span> is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @getmyrefundin @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
+    message: '@happyeasygo is running a country-wide scam. No refunds on cancellations, Unreachable customer support and an astounding number of customers complaining on twitter.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@TAAI1951\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
+    html: '<span class="tweet-highlight">@happyeasygo</span> is running a country-wide scam. No refunds on cancellations, Unreachable customer support and an astounding number of customers complaining on twitter.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
   },
   option2: {
-    message: '@happyeasygo is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@getmyrefundin\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
-    html: '<span class="tweet-highlight">@happyeasygo1</span> is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @getmyrefundin @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
+    message: 'I was defrauded by @happyeasygo. They don\'t provide refunds on booking cancellations. No response to calls, emails or tweets. DGCA/Concerned Ministry, kindly take action\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@TAAI1951\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
+    html: 'I was defrauded by <span class="tweet-highlight">@happyeasygo</span>. They don\'t provide refunds on booking cancellations. No response to calls, emails or tweets. DGCA/Concerned Ministry, kindly take action</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
   },
   option3: {
-    message: '@happyeasygo is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@getmyrefundin\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
-    html: '<span class="tweet-highlight">@happyeasygo2</span> is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @getmyrefundin @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
+    message: '@happyeasygo is cheating hundreds of customers daily. They are stealing the refund money from booking cancellations and failed transactions. Shut them down immediately.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@TAAI1951\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
+    html: '<span class="tweet-highlight">@happyeasygo</span> is cheating hundreds of customers daily. They are stealing the refund money from booking cancellations and failed transactions. Shut them down immediately.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
   },
   option4: {
-    message: '@happyeasygo is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.\n@MoCA_GoI\n@DGCAIndia\n@tourismgoi\n@JM_Scindia\n@getmyrefundin\n@consumerforum_\n@kishanreddybjp\n#boycotthappyeasygo',
-    html: '<span class="tweet-highlight">@happyeasygo3</span> is running a country-wide scam. No refunds on booking cancellation, Unreachable customer support. An astounding number of customer complaints on twitter.</br><span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @getmyrefundin @consumerforum_ @kishanreddybjp #boycotthappyeasygo</span>',
+    message: '@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp\nPlease investigate the operation of @happyeasygo. A simple search on twitter can expose their scam. The number of people they\'re cheating every day is appalling.\n#boycotthappyeasygo',
+    html: '<span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp</span></br>Please investigate the operation of <span class="tweet-highlight">@happyeasygo</span>. A simple search on twitter can expose their scam. The number of people they\'re cheating every day is appalling.</br><span class="tweet-highlight">#boycotthappyeasygo</span>',
   }
 }
 let senderName = '';
@@ -34,13 +34,16 @@ let isTweetAgreementSigned = false;
 let isMailAgreementSigned = false;
 let selectedTweet;
 
-// https://twitter.com/intent/tweet?via=lang,claire&text=text%20@modi%20@shah&url=http://url&hashtags=hashtag1,hashtag2,hashtag3
-
 window.onload = () => {
   document.getElementById('mailSubject').textContent = ': ' + subject;
   Object.keys(tweetOptions).forEach((key, index) => {
-    document.querySelector('.tweets-list').children[index].innerHTML = tweetOptions[key].html;
-    document.querySelector('.tweets-list').children[index].addEventListener('click', (e) => loadTweet(tweetOptions[key]));
+    let tweetOptionElement = document.createElement('div');
+    tweetOptionElement.className = "col fs-smallest p-3 m-2 bg-light rounded tweet-option";
+    tweetOptionElement.innerHTML = tweetOptions[key].html;
+    tweetOptionElement.addEventListener('click', (e) => loadTweet(tweetOptions[key], e.target));
+    document.querySelector('.tweets-list').appendChild(tweetOptionElement);
+    // document.querySelector('.tweets-list').children[index].innerHTML = tweetOptions[key].html;
+    // document.querySelector('.tweets-list').children[index].addEventListener('click', (e) => loadTweet(tweetOptions[key], e.target));
   });
   updateBody();
 }
@@ -89,15 +92,21 @@ document.querySelectorAll('.tncLink').forEach(element => {
   });
 });
 
-function loadTweet(option) {
+function loadTweet(option, element) {
   document.getElementById('tweetBody').innerHTML = option.html;
+  document.querySelectorAll('.tweet-option').forEach(e => e.classList.remove('selected'));
+  element.classList.add('selected');
   selectedTweet = option;
+  selectedTweet.element = element;
+  document.querySelector('.fa-solid.fa-circle-xmark').style.visibility = 'visible';
   enableOrDisableTweetButton(selectedTweet);
 }
 
 function unloadTweet() {
   document.getElementById('tweetBody').innerHTML = 'Select a tweet from the options on top.';
+  selectedTweet.element.classList.remove('selected');
   selectedTweet = undefined;
+  document.querySelector('.fa-solid.fa-circle-xmark').style.visibility = 'hidden';
   enableOrDisableTweetButton(selectedTweet);
 }
 
@@ -119,11 +128,11 @@ function enableOrDisableSendEmailButton() {
 
 function enableOrDisableTweetButton(selectedTweet) {
   if (tweetValidation()) {
-    document.getElementById('tweetButton').setAttribute('onclick', `location.href='${generateTweetLink(selectedTweet.message)}'; return false;`);
-    document.getElementById('tweetButton').disabled = false;
+    document.getElementById('tweetButton').setAttribute('href', generateTweetLink(selectedTweet.message));
+    document.getElementById('tweetButton').classList.remove('btn-disabled');
   } else {
     document.getElementById('tweetButton').removeAttribute('onclick');
-    document.getElementById('tweetButton').disabled = true;
+    document.getElementById('tweetButton').classList.add('btn-disabled');
   }
 }
 
@@ -136,7 +145,7 @@ function tweetValidation() {
 }
 
 function updateBody() {
-  body = `Respected Minister of Tourism, Shri G. Kishan Reddy,\nMinister of Civil Aviation, Shri Jyotiraditya M. Scindia,\nDirector General of DGCA, Shri Arun Kumar and\nother concerned authorities in cc,\n\nI am writing to you out of deep distress over the fraudulent operations of a travel agency company, HappyEasyGo Pvt. Ltd. (\"HEG\"). I am one of many unfortunate customers, who are owed huge sums of money by them in terms of refund for booking cancellations, refund for transaction failures etc. Customers are asked to wait for 30-45 days in order to process the refund. However, they don\'t do anything after that. They don\'t reply to queries via email and their customer care numbers are always unreachable. The number of people having similar issues with their service and taking it to twitter to complain is countless but they don\'t seem to be affected. Every day hundreds of people book tickets and hotels through their website. They continue to steal money from new customers.\nA company of such background should not be allowed to operate. I kindly request and trust you to look into this and take necessary and immediate action against them and bring them to justice. I hope, after this, they return money to those they've stolen from and most importantly don\'t attempt to steal from anyone else in the future.\n\nThanks and Regards,\n\n${senderName}\nTrip ID: ${tripId}`;
+  body = `Respected Minister of Tourism, Shri G. Kishan Reddy,\nMinister of Civil Aviation, Shri Jyotiraditya M. Scindia,\nDirector General of DGCA, Shri Arun Kumar and\nother concerned authorities in cc,\n\nI am writing to you out of deep distress over the fraudulent operations of the travel agency company, HappyEasyGo Pvt. Ltd. (\"HEG\"). I am one of many unfortunate customers, who are owed huge sums of money by them in refund for booking cancellations, refund for transaction failures etc. Customers are asked to wait for 30-45 days in order to process the refund. However, they don\'t do anything after that. They don\'t reply to queries via email and their customer care numbers are always unreachable. The number of people having similar issues with their service and taking it to twitter to complain is countless and growing since it's inception in 2017 but they clearly don\'t seem to be affected. Every day hundreds of people book tickets and hotels through their website. They continue to steal from every new customer.\nA company of such repute should not be allowed to operate. I kindly request and trust you to look into this and take necessary and immediate action against them and bring them to justice. I hope, after this, they return money to those they've stolen from and most importantly don\'t attempt to steal from anyone else in the future.\nI'm mentioning my booking Id below for the reference of officials from HEG tagged in CC, if by chance they plan to return my money.\n\nThanks and Regards,\n${senderName}\nBooking Id: ${tripId}`;
   document.getElementById('mailBody').textContent = body;
 }
 
