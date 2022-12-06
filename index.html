@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report HappyEasyGo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container text-center">
+    <div class="p-4 m-4 border-bottom">
+      <h1 class="my-3 display-5 fw-bold">Have you too been scammed by <span class="text-danger">HEG</span>?</h1>
+      <p class="lead">Join thousands of others who've been scammed by HappyEasyGo, raise some voice and bring them
+        down.</p>
+    </div>
+    <div class="row g-5 mb-3">
+      <div class="col-md-8">
+        <p class="p-4 mx-4 fs-custom">
+          A couple of months back, I made a flight booking in HappyEasyGo(HEG) which got cancelled by the
+          airlines. So I made a request for cancellation and refund in the HEG website and I was asked to wait for 30-45
+          days for the airlines to refund the amount. However, within a week, I got a mail from the airlines stating
+          that they had completed refund to the travel agency (HEG). 72 days has passed since I requested for refund and
+          I got no
+          refund, no replies to emails and no answers to calls. I decided to take it to twitter hoping some executives
+          from HEG would see and take action but turns out there's someone like me complaining about HEG on twitter
+          almost every 10 mins. There were countless people facing similar issues but not one reply from HEG's
+          official account. The company is clearly fraud and I don't they'll ever respond to us or return our money but
+          hey, let's atleast do something to bring this to the attention of concerned authorities and future customers!
+        </p>
+        <h5>Now what can we do about this?</h5>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <img class="img-fluid mx-auto mb-5" src="scam.jpeg" alt="HEG Scam" width="280">
+      </div>
+    </div>
+    <div class="scroll-down-btn bounce mb-6" style="visibility: visible;">
+      <i class="fas fa-angle-down" onclick="window.scrollBy(0, 800);"></i>
+    </div>
+    <!-- Terms and Conditions Modal -->
+    <div class="modal fade" id="tncModal" tabindex="-1" aria-labelledby="tncLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="tncLabel">Terms and Conditions</h1>
+            <button type="button" class="btn-close shadow-none" onclick="tncModalClose()" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" onclick="tncModalClose()"
+              data-bs-dismiss="modal">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 m-3">
+      <h1 class="my-4">Mail the authorities</h1>
+      <p class="lead fs-6 mb-5">Review the body of the email, enter your details and click send to take you to your
+        mailing app from where you can send the email to the following officials.</p>
+      <div class="row my-2 fw-lighter">
+        <div class="col-md-2 fs-smallest p-3">
+          <b>Shri G. Kishan Reddy</b></br>
+          Hon'ble Minister of Tourism</br>
+          kishanreddy.g@sansad.nic.in
+        </div>
+        <div class="col-md-2 fs-smallest p-3">
+          <b>Mr. Shoeb Samad</b></br>
+          Director General,</br>
+          Travel Trade Division,</br>
+          Ministry of Tourism</br>
+          ss.samad@nic.in
+        </div>
+        <div class="col-md-2 fs-smallest p-3">
+          <b>Shri Jyotiraditya M. Scindia</b></br>
+          Hon'ble Minister of Civil Aviation</br>
+          hm.moca@nic.in
+        </div>
+        <div class="col-md-2 fs-smallest p-3">
+          <b>Shri Pramod Kumar Thakur</b></br>
+          Deputy Director General,</br>
+          Ministry of Civil Aviation</br>
+          sdit.div-moca@gov.in
+        </div>
+        <div class="col-md-2 fs-smallest p-3">
+          <b>Shri Arun Kumar</b></br>
+          Director General</br>
+          Director General of Civil Aviation</br>
+          dgoffice.dgca@nic.in
+        </div>
+        <div class="col-md-2 fs-smallest p-3">
+          <b>TAAI Secretariat</b></br>
+          Travel Agents Association of India</br>
+          taai@taai.in
+        </div>
+      </div>
+      <div class="py-2 mt-5 mb-3 bg-light rounded mx-auto align-items-center">
+        <p class="my-1">
+          <span class="fw-semibold">Subject</span>
+          <span id="mailSubject"></span>
+        </p>
+      </div>
+      <div class="row g-3 mb-6">
+        <div class="col-md-8">
+          <div class="p-4 rounded bg-light">
+            <div class="form-floating">
+              <textarea class="form-control shadow-none" id="mailBody" style="height: 362px;" spellcheck="false"
+                disabled="true"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-start">
+          <form class=" p-4 rounded bg-light">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control shadow-none" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control shadow-none" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="tripId" class="form-label">Trip ID.</label>
+              <input type="text" class="form-control shadow-none" id="tripId">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input shadow-none" id="checkMailAgreement">
+              <label class="form-check-label fw-lighter" for="checkMailAgreement">I agree to the <a href="#"
+                  class="tncLink">terms and conditions</a></label>
+            </div>
+            <div class="d-grid text-center">
+              <button class="btn btn-primary" id="sendButton" disabled="true">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="p-3 m-3">
+      <h1 class="my-4">Tweet tagging the authorities</h1>
+      <p class="lead fs-6 mb-5">Select a tweet from the list and click send to take you to twitter from where you can
+        post the tweet.</p>
+      <div class="row py-2 my-3 fw-lighter tweets-list text-start">
+        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
+        </div>
+        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
+        </div>
+        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
+        </div>
+        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
+        </div>
+      </div>
+      <div class="row mt-5 mb-6">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 p-4 mx-auto rounded bg-light text-start">
+          <div class="bg-white rounded p-2 border" id="tweetBody">
+            Select a tweet from the options on top.
+          </div>
+          <div class="my-2">
+            <input type="checkbox" class="form-check-input shadow-none" id="checkTweetAgreement">
+            <label class="form-check-label fw-lighter" for="checkTweetAgreement">I agree to the <a href="#"
+                class="tncLink">terms and conditions</a></label>
+          </div>
+          <div class="d-grid text-center">
+            <button class="btn btn-primary mt-3" id="tweetButton" disabled="true">Tweet <i
+                class="fa-brands fa-twitter"></i></button>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
