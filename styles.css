@@ -4,6 +4,7 @@ h1 {
 
 textarea {
   resize: none;
+  min-height: 280px !important;
 }
 
 textarea:disabled {
