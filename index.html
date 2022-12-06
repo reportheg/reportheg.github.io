@@ -53,8 +53,38 @@
             <button type="button" class="btn-close shadow-none" onclick="tncModalClose()" data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
+          <div class="modal-body text-start">
+            (This agreement is requested to safeguard the website and it's creators from legal troubles
+            caused by users who wish to misuse the website and alter it's functioning. There is no need to worry about
+            it really!)<br><br>
+            When you access, browse or use reportheg.github.io (the "website"), you accept, without limitation or
+            qualification, the terms and conditions set forth herein.<br>
+            These Terms and Conditions of use and any additional terms posted on this Site together constitute the
+            entire agreement between the creators of this website and you with respect to your use of this Site.<br>
+            You, the user of this website acknowledge and agree that,</br>
+            1. This website is only a platform to help out customers who are facing issues in the services offered by
+            HappyEasyGo Pvt. Ltd.("HEG") and hence shall not be deemed to be responsible for any lack or deficiency of
+            services provided in this website or it's effectiveness in getting response from authorities, getting
+            response from "HEG" or recovering your loss from "HEG".<br>
+            2. This website will not be responsible for the emails and tweets send by it's users regarding issues with
+            "HEG" using the website or otherwise.<br>
+            3. This website is only for your personal use. You shall not distribute exchange, modify, sell or transmit
+            any content or material you copy from this website, including but not limited to any text, images, audio and
+            video, for any business, commercial or public purpose.<br>
+            4. If you use, or attempt to use the Service for purposes other for which it is expressly designed,
+            including but not limited to tampering, hacking, modifying or otherwise corrupting the security or
+            functionality of Service, you agree to pay for all the losses to it's other users or the creators and you
+            will be subject to damages and other penalties, including criminal prosecution where and if applicable.<br>
+            5. This website and it's creators will not be liable to you or to any other person for any direct, indirect,
+            incidental, punitive or consequential loss, damage, cost or expense of any kind whatsoever and howsoever
+            caused out of your usage of this Site.<br>
+            6. You acknowledge that this Website is provided only on the basis set out in these terms and conditions.
+            Your uninterrupted access or use of this Website on this basis may be prevented by certain factors outside
+            our reasonable control including, without limitation, the unavailability, inoperability or interruption of
+            the Internet or other telecommunications services or as a result of any maintenance or other service work
+            carried out on this Website. The website or it's creators does not accept any responsibility and will not be
+            liable for any loss or damage whatsoever arising out of or in connection with any ability/inability to
+            access or to use the Site.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" onclick="tncModalClose()"
@@ -111,9 +141,9 @@
       </div>
       <div class="row g-3 mb-6">
         <div class="col-md-8">
-          <div class="p-4 rounded bg-light">
-            <div class="form-floating">
-              <textarea class="form-control shadow-none" id="mailBody" style="height: 362px;" spellcheck="false"
+          <div class="p-4 rounded bg-light h-100">
+            <div class="form-floating h-100">
+              <textarea class="form-control shadow-none h-100" id="mailBody" spellcheck="false"
                 disabled="true"></textarea>
             </div>
           </div>
@@ -130,7 +160,7 @@
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-              <label for="tripId" class="form-label">Trip ID.</label>
+              <label for="tripId" class="form-label">Booking Id. (or Trip Id.)</label>
               <input type="text" class="form-control shadow-none" id="tripId">
             </div>
             <div class="mb-3 form-check">
@@ -150,18 +180,13 @@
       <p class="lead fs-6 mb-5">Select a tweet from the list and click send to take you to twitter from where you can
         post the tweet.</p>
       <div class="row py-2 my-3 fw-lighter tweets-list text-start">
-        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
-        </div>
-        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
-        </div>
-        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
-        </div>
-        <div class="col-md-3 fs-smallest p-3 m-2 bg-light rounded tweet-option" tabindex="0">
-        </div>
       </div>
       <div class="row mt-5 mb-6">
         <div class="col-md-4"></div>
         <div class="col-md-4 p-4 mx-auto rounded bg-light text-start">
+          <i class="fa-solid fa-circle-xmark"
+            style="float: right; margin: 10px 10px 0px 0px; color: #696969; visibility: hidden; cursor: pointer;"
+            onclick="unloadTweet()"></i>
           <div class="bg-white rounded p-2 border" id="tweetBody">
             Select a tweet from the options on top.
           </div>
@@ -171,8 +196,8 @@
                 class="tncLink">terms and conditions</a></label>
           </div>
           <div class="d-grid text-center">
-            <button class="btn btn-primary mt-3" id="tweetButton" disabled="true">Tweet <i
-                class="fa-brands fa-twitter"></i></button>
+            <a class="btn btn-primary mt-3 btn-disabled" id="tweetButton" target="_blank"
+              rel="noopener noreferrer">Tweet <i class="fa-brands fa-twitter"></i></a>
           </div>
         </div>
         <div class="col-md-4"></div>
