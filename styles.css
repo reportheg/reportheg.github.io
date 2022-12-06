@@ -10,7 +10,26 @@ textarea:disabled {
   background-color: #ffffff !important;
 }
 
+/* Important part */
+.modal-dialog {
+  overflow-y: initial !important
+}
+
+.modal-body {
+  height: 70vh;
+  overflow-y: auto;
+}
+
 button:disabled {
+  background-color: #7a99ad !important;
+  border: none !important;
+  pointer-events: all !important;
+  cursor: not-allowed;
+}
+
+.btn-disabled {
+  background-color: #7a99ad !important;
+  border: none !important;
   pointer-events: all !important;
   cursor: not-allowed;
 }
@@ -31,8 +50,9 @@ button:disabled {
   background-color: #1da0f22b !important;
 }
 
-.tweets-list>.tweet-option:focus {
-  border: solid 2px #1da0f22b !important;
+.tweets-list>.tweet-option.selected {
+  background-color: #1da0f225 !important;
+  border: solid 1.5px #1da0f23e !important;
 }
 
 .tweet-highlight {
@@ -87,6 +107,16 @@ button:disabled {
 
 .modal.fade.show {
   background-color: #0000008b;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #adc1c9;
+  border-radius: 5px;
 }
 
 .tweets-list::-webkit-scrollbar {
