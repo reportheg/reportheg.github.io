@@ -26,6 +26,7 @@ const tweetOptions = {
     html: '<span class="tweet-highlight">@MoCA_GoI @DGCAIndia @tourismgoi @JM_Scindia @TAAI1951 @consumerforum_ @kishanreddybjp</span></br>Please investigate the operation of <span class="tweet-highlight">@happyeasygo</span>. A simple search on twitter can expose their scam. The number of people they\'re cheating every day is appalling.</br><span class="tweet-highlight">#boycotthappyeasygo</span>',
   }
 }
+
 let senderName = '';
 let senderEmail = '';
 let tripId = '';
@@ -42,8 +43,6 @@ window.onload = () => {
     tweetOptionElement.innerHTML = tweetOptions[key].html;
     tweetOptionElement.addEventListener('click', (e) => loadTweet(tweetOptions[key], e.target));
     document.querySelector('.tweets-list').appendChild(tweetOptionElement);
-    // document.querySelector('.tweets-list').children[index].innerHTML = tweetOptions[key].html;
-    // document.querySelector('.tweets-list').children[index].addEventListener('click', (e) => loadTweet(tweetOptions[key], e.target));
   });
   updateBody();
 }
