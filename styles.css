@@ -1,0 +1,99 @@
+h1 {
+  color: #191921;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea:disabled {
+  background-color: #ffffff !important;
+}
+
+button:disabled {
+  pointer-events: all !important;
+  cursor: not-allowed;
+}
+
+@media (min-width: 720px) {
+  .tweets-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.tweets-list>.tweet-option {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.tweets-list>.tweet-option:hover {
+  background-color: #1da0f22b !important;
+}
+
+.tweets-list>.tweet-option:focus {
+  border: solid 2px #1da0f22b !important;
+}
+
+.tweet-highlight {
+  color: #1da1f2;
+}
+
+.tweet-bold {
+  font-weight: bold;
+}
+
+.scroll-down-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.mb-6 {
+  margin-bottom: 10rem;
+}
+
+.fs-custom {
+  font-size: 1.1rem;
+}
+
+.fs-smallest {
+  font-size: 0.8rem;
+}
+
+.modal.fade.show {
+  background-color: #0000008b;
+}
+
+.tweets-list::-webkit-scrollbar {
+  height: 5px;
+}
+
+.tweets-list::-webkit-scrollbar-thumb {
+  background: #adc1c9;
+  border-radius: 5px;
+}
